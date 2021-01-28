@@ -1,4 +1,4 @@
-og = Menu.create(season: 'all year', start: 'January', end: 'December')
+og = Menu.create(season: 'year', start: 'January', end: 'December')
 
 c1 = Chip.create(name: 'Oreo', image: '../static/resources/images/cookie_4.jpg', wide: '../static/resources/images/cookie_4_WIDE.jpg', description: 'My personal FAVE! I love cookies-n-cream flavor, and this lives up to the high standard.', menu_id: og.id)
 c2 = Chip.create(name: 'Java Chip Oreo', image: '../static/resources/images/cookie_4.jpg', wide: '../static/resources/images/cookie_4_WIDE.jpg', description: 'Sweet brown sugar with that sharp Java Arabica Bite. The perfect balance. Yin and Yang.', menu_id: og.id)
