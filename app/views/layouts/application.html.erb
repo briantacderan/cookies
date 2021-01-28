@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Cookies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+      
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="content">
+          
+        <%= link_to root_path, :html => { :class => "desktop" } do %>
+          <img class="icon" 
+               id="background" 
+               src="/assets/logo-background.svg" />
+          <h1>cookies</h1>
+          <img class="icon"
+               id="name"
+               src="/assets/logo-name.svg" />
+        <% end %>
+          
+        <nav class="desktop">
+          <ul>
+            <li><%= link_to "MENU", menu_path %></li>
+            <li><%= link_to "ABOUT", about_path %></li>
+            <li><%= link_to "ORDER", new_order_path %></li>
+            <li>
+              <%= link_to root_path do %>
+                <img class="icon" 
+                     id="heart" 
+                     src="/assets/heart-solid.svg" />
+              <% end %>
+            </li>
+          </ul>
+        </nav>
+          
+        <nav class="mobile">
+          <ul>
+            <li>
+              <%= link_to "https://www.instagram.com/cookiesbyrelle/" do %>
+                <img class="icon" 
+                     id="heart" 
+                     src="/assets/heart-solid.svg" />
+              <% end %>
+            </li>
+            <div class="dropdown">
+              <li>
+                <%= link_to root_path do %>
+                  <img class="icon dropbtn" 
+                       id="bars" 
+                       src="/assets/bars-solid.svg" />
+                <% end %>
+              </li>
+              <div class="dropdown-content">
+                <li><%= link_to "MENU", menu_path %></li>
+                <li><%= link_to "ABOUT", about_path %></li>
+                <li><%= link_to "ORDER", new_order_path %></li>
+              </div>
+            </div>
+          </ul>
+        </nav>
+          
+      </div>
+    </header>
+
+    <%= yield %>
+
+    <footer>
+      <div class="content">
+        <span class="copyright">&copy; 2020 <strong>COOKIES by relle</strong></span>
+        <nav class="desktop">
+          <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="//cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
+
+  </body>
+</html>
