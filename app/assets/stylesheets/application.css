@@ -51,6 +51,7 @@ html {
   font-weight: 300;
   font-size: 16px;
   color: #4A4A4A;
+  background-color: pink;
 }
 
 #main-content {
@@ -154,7 +155,7 @@ header .icon#heart {
   filter: invert(30%) sepia(49%) saturate(1812%) hue-rotate(314deg) brightness(86%) contrast(92%);
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 720px) {
   header ul {
     padding-right: 0.4rem;
   }
@@ -333,7 +334,7 @@ header .icon#heart {
 }
 
 #button {
-  background-color: #152b4f;
+  background-color: #1f1c1c;
   color: #f5eee1;
   line-height: 1.6;
   text-align: center;
@@ -368,7 +369,7 @@ header .icon#heart {
   transition: all 200ms ease-in;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 720px) {
   #main-content {
     width: 100%;
     top: calc((100vw * 0.86580087) - 149.350649px);
@@ -410,7 +411,7 @@ header .icon#heart {
   }
 
   #banner-right .container {
-
+    
   }
 
   #banner img.desktop {
@@ -438,6 +439,24 @@ header .icon#heart {
 @media only screen and (max-width: 440px) {
   #main-content {
     top: 229.049351px;
+  }
+
+  #banner-right #button {
+    margin: 1rem auto;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    
+  #banner img.desktop {
+    display: block;
+    visibility: hidden;
+  }
+    
+  #banner img.mobile {
+    position: fixed;
+    top: -1rem;
   }
 }
 
@@ -564,7 +583,7 @@ header .icon#heart {
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 720px) {
   #bulletin-section {
     border-top: solid 10px #f5cdc9;
   }
@@ -732,7 +751,7 @@ header .icon#heart {
 }
 
 #newsletter-section .container {
-  padding: 4rem;
+  padding: 3rem 0 5rem 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -774,6 +793,12 @@ header .icon#heart {
   background-color: #bd7e79;
 }
 
+@media only screen and (max-width: 720px) {
+  #newsletter-section .container {
+    padding-bottom: 8rem;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   #newsletter-section h1 {
     font-size: 1.4rem;
@@ -798,9 +823,35 @@ header .icon#heart {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  #newsletter-section h1 {
+    font-size: 1.4rem;
+  }
+
+  #newsletter-section .button {
+    margin: 1rem 0 0 0;
+    font-size: 1rem;
+  }
+
+  #newsletter-section .content span {
+    display: none;
+  }
+
+  #newsletter-section input {
+    width: 190px;
+  }
+
+  #newsletter-section button {
+    font-size: 0.85rem;
+    letter-spacing: 0rem;
+  }
+}
+
 @media only screen and (max-width: 440px) {
   #newsletter-section .container {
-    padding: 1.5rem 0 2rem 0;
+    padding: 1.5rem 0 5rem 0;
+    background-color: #f1f1f1;
+    border-top: solid 10px pink;
   }
 
   #newsletter-section .content {
@@ -825,11 +876,19 @@ header .icon#heart {
 
 
 
+#spacing {
+  height: 50px;
+}
+
 /* Footer */
 footer {
+  bottom: 0;
+  position: relative;
+  width: 100vw;
   border-top: solid 1px black;
   background-color: #1f1c1c;
   padding: 1.5rem 1.5rem;
+  margin-bottom: 0;
 }
 
 footer span,
@@ -853,6 +912,12 @@ footer nav ul {
 
 footer nav li {
   padding-left: 1rem;
+}
+
+@media only screen and (max-width: 720px) {
+  footer {
+    position: fixed;
+  }
 }
 
 @media only screen and (max-width: 600px) {

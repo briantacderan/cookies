@@ -16,14 +16,10 @@
     <header>
       <div class="content">
           
-        <%= link_to root_path, :html => { :class => "desktop" } do %>
-          <img class="icon" 
-               id="background" 
-               src="/assets/logo-background.svg" />
+        <%= link_to root_path, class: "desktop" do %>
+          <%= image_tag "logo-background.svg", id: "background", class: "icon" %>
           <h1>cookies</h1>
-          <img class="icon"
-               id="name"
-               src="/assets/logo-name.svg" />
+          <%= image_tag "logo-name.svg", id: "name", class: "icon" %>
         <% end %>
           
         <nav class="desktop">
@@ -32,10 +28,8 @@
             <li><%= link_to "ABOUT", about_path %></li>
             <li><%= link_to "ORDER", new_order_path %></li>
             <li>
-              <%= link_to root_path do %>
-                <img class="icon" 
-                     id="heart" 
-                     src="/assets/heart-solid.svg" />
+              <%= link_to "https://www.instagram.com/cookiesbyrelle/" do %>
+                <%= image_tag "heart-solid.svg", id: "heart", class: "icon" %>
               <% end %>
             </li>
           </ul>
@@ -45,18 +39,14 @@
           <ul>
             <li>
               <%= link_to "https://www.instagram.com/cookiesbyrelle/" do %>
-                <img class="icon" 
-                     id="heart" 
-                     src="/assets/heart-solid.svg" />
+                <%= image_tag "heart-solid.svg", id: "heart", class: "icon" %>
               <% end %>
             </li>
             <div class="dropdown">
               <li>
-                <%= link_to root_path do %>
-                  <img class="icon dropbtn" 
-                       id="bars" 
-                       src="/assets/bars-solid.svg" />
-                <% end %>
+                <a>
+                  <%= image_tag "bars-solid.svg", id: "bars", class: "icon dropbtn" %>
+                </a>
               </li>
               <div class="dropdown-content">
                 <li><%= link_to "MENU", menu_path %></li>
@@ -66,15 +56,18 @@
             </div>
           </ul>
         </nav>
-          
+        
       </div>
     </header>
 
     <%= yield %>
+      
+    <div id="spacing" class="container">
+    </div>
 
     <footer>
       <div class="content">
-        <span class="copyright">&copy; 2020 <strong>COOKIES by relle</strong></span>
+        <span class="copyright">&copy; 2021 Brian Tacderan <strong>COOKIES by relle</strong></span>
         <nav class="desktop">
           <ul>
             <li><a href="#">Terms</a></li>
