@@ -444,11 +444,12 @@ header .icon#heart {
   }
     
   #banner-right h1 {
-    -webkit-text-stroke: 2px black;    
+    -webkit-text-stroke: 2px black;  
+    margin-top: 1.5rem;
   }
 
   #banner-right #button {
-    margin: 1rem auto;
+    margin: 0 auto;
     width: 90vw;
     display: flex;
     justify-content: center;
