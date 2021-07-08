@@ -283,6 +283,8 @@ header .icon#heart {
   background-size: cover;
 }
 
+
+
 #banner {
   display: flex;
   align-items: stretch;
@@ -388,7 +390,7 @@ header .icon#heart {
     width: auto;
     position: fixed;
     z-index: -1;
-    bottom: 460px;
+    bottom: 600px;
   }
 
   #banner .container {
@@ -432,13 +434,17 @@ header .icon#heart {
   #banner {
     height: 50%;
     width: auto;
-    bottom: 484px;
+    bottom: 550px;
   }
 }
 
 @media only screen and (max-width: 440px) {
   #main-content {
     top: 229.049351px;
+  }
+    
+  #banner-right h1 {
+    -webkit-text-stroke: 2px black;    
   }
 
   #banner-right #button {
@@ -916,10 +922,6 @@ footer nav li {
 @media only screen and (max-width: 720px) {
   footer {
     position: fixed;
-  }
-    
-  footer {
-    padding-bottom: 1.5rem;
   }
 }
 
