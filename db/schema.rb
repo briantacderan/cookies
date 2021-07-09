@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_17_130057) do
+ActiveRecord::Schema.define(version: 2021_07_08_095844) do
 
   create_table "chips", force: :cascade do |t|
     t.string "name"
@@ -25,10 +25,43 @@ ActiveRecord::Schema.define(version: 2021_01_17_130057) do
 
   create_table "menus", force: :cascade do |t|
     t.string "season"
-    t.string "start"
-    t.string "end"
+    t.string "info"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.integer "product_id"
+    t.integer "user_id"
+    t.integer "status", default: 0
+    t.string "token"
+    t.string "charge_id"
+    t.string "error_message"
+    t.string "customer_id"
+    t.integer "payment_gateway"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.integer "price_cents", default: 0, null: false
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string "name"
+    t.string "stripe_plan_name"
+    t.string "paypal_plan_name"
+    t.integer "price_cents", default: 0, null: false
+    t.string "price_currency", default: "USD", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
 end

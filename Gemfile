@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.4'
+ruby '2.7.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.4'
@@ -58,3 +58,12 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Stripe API
+gem 'stripe', '>= 5.35.0'
+
+# payment dependencies
+gem 'devise', '>= 4.8.0'
+gem 'haml', '>= 5.2.1'
+gem 'jquery-rails', '>= 4.4.0'
+gem 'money-rails', '>= 1.14.0'
