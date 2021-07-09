@@ -25,8 +25,7 @@ ActiveRecord::Schema.define(version: 2021_01_17_130057) do
 
   create_table "menus", force: :cascade do |t|
     t.string "season"
-    t.string "start"
-    t.string "end"
+    t.string "info"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

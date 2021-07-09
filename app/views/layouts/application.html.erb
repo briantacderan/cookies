@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-      
+
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'menu', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -16,13 +16,13 @@
 
     <header>
       <div class="content">
-          
+
         <%= link_to root_path, class: "desktop" do %>
           <%= image_tag "logo-background.svg", id: "background", class: "icon" %>
           <h1>cookies</h1>
           <%= image_tag "logo-name.svg", id: "name", class: "icon" %>
         <% end %>
-          
+
         <nav class="desktop">
           <ul>
             <li><%= link_to "MENU", menu_path %></li>
@@ -35,7 +35,7 @@
             </li>
           </ul>
         </nav>
-          
+
         <nav class="mobile">
           <ul>
             <li>
@@ -57,18 +57,18 @@
             </div>
           </ul>
         </nav>
-        
+
       </div>
     </header>
 
     <%= yield %>
-      
+
     <div id="spacing" class="container">
     </div>
 
     <footer>
       <div class="content">
-        <span class="copyright">&copy; 2021 Cookies by Relle</span><strong>Brian Tacderan</strong>
+        <span class="copyright">&copy; 2021 Cookies by Relle</span><a href="https://the-tacderan-code.herokuapp.com"><strong>BRIAN TACDERAN</strong></a>
         <nav class="desktop">
           <ul>
             <li><a href="#">Terms</a></li>

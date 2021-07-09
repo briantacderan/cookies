@@ -8,14 +8,17 @@
   height: 100%;
   font-size: 2rem;
   background-size: inherit;
+  z-index: -1;
 }
 
 #category-background {
-  max-width: 500px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: black;
+  z-index: -1;
 }
 
 #category-background img {
@@ -38,6 +41,7 @@ h1.cat-name {
 #original h1 {
   color: olive;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  -webkit-text-stroke: 2px black;
   align-items: right;
   margin: 30% auto 60% auto;
   left: 10vw;
@@ -46,16 +50,6 @@ h1.cat-name {
 #seasonal h1 {
   color: white;
   right: 10vw;
-}
-
-@media only screen and (min-width: 440px) {
-  #original h1 {
-    -webkit-text-stroke: 2px black;
-  }
-
-  #seasonal h1 {
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  }
 }
 
 img.original {
@@ -77,59 +71,41 @@ h1.cat-name {
   display: none;
 }
 
+#original,
+#seasonal {
+  opacity: 0.2;
+  z-index: 1;
+}
+
+#original:hover,
+#seasonal:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 530px) {
   h1.cat-name {
     font-size: 3rem;
     font-weight: 900;
     letter-spacing: 0.5rem;
   }
-}
 
-/* #banner {
-  display: flex;
-  align-items: stretch;
-  width: 56%;
-  height: 100%;
-}
+  #original,
+  #seasonal {
+    opacity: 0.7;
+    z-index: 1;
+  }
 
-#banner img {
-  width: 130%;
-  height: 100%;
-  max-height: 750px;
-  max-width: 750px;
-  border-right: solid 10px #f5eee1;
-}
+  #original h1 {
+    -webkit-text-stroke: 0;
+  }
 
-#banner img.mobile {
-  display: none;
-}
+  #seasonal h1 {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
 
-#banner-right {
-  height: 100%;
+  img.seasonal {
+    width: 100vw;
+    border-radius: 15%;
+  }
 }
-
-#sign-up-section .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 295px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 2rem;
-}
-
-#sign-up-section .content h1 {
-  line-height: 2.5rem;
-  color: #bd7e79;
-}
-
-#sign-up-section .content p {
-  font-weight: 600;
-  line-height: 1.5rem;
-  padding-bottom: 2rem;
-  color: #1f1c1c;
-  max-width: 250px;
-  text-shadow: -1px 1px 1px rgba(0,0,0,0.11),
-              -2px 2px 2px rgba(0,0,0,0.11),
-              -4px 4px 4px rgba(0,0,0,0.11);
-} */
