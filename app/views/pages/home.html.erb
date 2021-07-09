@@ -12,39 +12,35 @@
       <div id="banner-right">
         <div class="container">
           <div class="content">
-            <h1>fresh cookies</h1>
-            <h3>MADE TO ORDER</h3>
+            <h1>MADE TO ORDER</h1>
             <p>every cookie baked with <strong>hella love</strong></p>
-            <%= link_to "ORDER HERE", menu_path, id: "button" %>
+            <%= link_to "ORDER HERE", new_order_path, id: "button" %>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="bulletin-section">
-      <div id="bulletin-container">
-        <div id="bulletin-left"
-             style="background: url(<%= image_url 'white-stripes.svg' %>);
-                    background-color: #f1f1f1;">
-
-          <%= @chips.each do |chip| %>
-              <div class="post">
-                <%= image_tag chip.image, class: "desktop" %>
-                <%= image_tag chip.wide, class: "mobile" %>
-                <div class="content">
-                  <h4><%= chip.name %></h4>
-                  <p><%= chip.description %></p>
-                  <%= link_to "ORDER", new_order_path %>
-                </div>
+    <div id="bulletin-section"
+         style="background: url(<%= image_url "white-stripes.svg" %>); 
+                background-color: #F5EEE1;">
+      <div id="bulletin-left">
+          
+        <%= @chips.each do |chip| %>
+            <div class="post">
+              <%= image_tag chip.image, class: "desktop" %>
+              <%= image_tag chip.wide, class: "mobile" %>
+              <div class="content">
+                <h4><%= chip.name %></h4>
+                <p><%= chip.description %></p>
+                <%= link_to "ORDER", new_order_path %>
               </div>
-          <% end %>
-
-        </div>
-        <div id="bulletin-right">
-          <div class="parallax">
-            <%= image_tag "cookie_3.jpg", id: "parallaxTwo", class: "bull-right" %>
-            <%= image_tag "pink-chip.png", id: "parallaxThree", class: "bull-right" %>
-          </div>
+            </div>
+        <% end %>
+          
+      </div>
+      <div id="bulletin-right">
+        <div class="parallax">
+          <%= image_tag "cookie_1.jpg", id: "parallaxTwo" %>
         </div>
       </div>
     </div>
@@ -52,19 +48,19 @@
     <div id="newsletter-section">
       <div class="container">
         <div class="content">
-          <h1>subscribe to the <strong>cookies</strong> club</h1>
-          <span>Get on our member list and never miss out on new flavors and promotions or click on the <strong>HEART</strong>at the top of the page and follow us on @instagram</span>
+          <h1>subscribe to our mailing list</h1>
+          <span>Get on our member list and never miss out on new flavors and promotions or click on the  <strong> heart</strong>at the top of the page and follow us on @instagram</span>
         </div>
         <div class="button">
-          <input type="text"
-                 class="form-control"
-                 placeholder="Email address"
+          <input type="text" 
+                 class="form-control" 
+                 placeholder="Email address" 
                  aria-label="Email address" />
           <span>
-            <button type="button">SUBSCRIBE</button>
+            <button type="button">Subscribe</button>
           </span>
         </div>
       </div>
     </div>
-
+    
 </div>
