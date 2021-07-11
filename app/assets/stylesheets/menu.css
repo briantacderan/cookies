@@ -83,23 +83,6 @@ h1.cat-name {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 900px) {
-  #category-background::after,
-  #category-background img,
-  #category-background h1 {
-    max-width: 60vw;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  #category-background,
-  #category-background::after,
-  #category-background img,
-  #category-background h1 {
-    max-width: 100vw;
-  }
-}
-
 @media only screen and (max-width: 530px) {
   h1.cat-name {
     font-size: 3rem;
@@ -114,17 +97,11 @@ h1.cat-name {
   }
 
   #original h1 {
-    color: #c27c7c;
     -webkit-text-stroke: 0;
-    text-shadow: -1px 1px 1px rgba(0,0,0,0.11),
-                -2px 2px 2px rgba(0,0,0,0.11),
-                -4px 4px 4px rgba(0,0,0,0.11);
   }
 
   #seasonal h1 {
-    text-shadow: -1px 1px 1px rgba(0,0,0,0.11),
-                -2px 2px 2px rgba(0,0,0,0.11),
-                -4px 4px 4px rgba(0,0,0,0.11);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
 
   img.seasonal {
