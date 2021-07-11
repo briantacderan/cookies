@@ -60,11 +60,11 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Payment API client libraries
-#gem 'paypal', '>= 2.0.0'
-#gem 'stripe', '>= 5.35.0'
+gem 'paypal', '>= 2.0.0'
+gem 'stripe', '>= 5.35.0'
 
 # Payment API dependencies
-#gem 'devise', '>= 4.8.0'
-#gem 'haml', '>= 5.2.1'
-#gem 'jquery-rails', '>= 4.4.0'
-#gem 'money-rails', '>= 1.14.0'
+gem 'devise', '>= 4.8.0'
+gem 'haml', '>= 5.2.1'
+gem 'jquery-rails', '>= 4.4.0'
+gem 'money-rails', '>= 1.14.0'
