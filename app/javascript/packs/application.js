@@ -15,3 +15,6 @@ ActiveStorage.start()
 document.addEventListener("turbolinks:load", function() {
   
 });
+
+//= require jquery
+//= require jquery_ujs
