@@ -180,6 +180,10 @@ header .icon#background {
   z-index: 3;
 }
 
+header .icon#name {
+  z-index: 3;
+}
+
 header .icon#heart {
   filter: invert(30%) sepia(49%) saturate(1812%) hue-rotate(314deg) brightness(86%) contrast(92%);
 }
@@ -200,6 +204,11 @@ header .icon#heart {
 
   header .icon#heart {
     height: 1rem;
+  }
+
+  header .icon#logout {
+    height: 2rem;
+    padding-bottom: 0.6rem;
   }
 
   header nav.desktop {
@@ -311,6 +320,12 @@ header .icon#heart {
     display: flex;
   }
 
+  header nav.mobile li a:hover {
+    background-color: clear;
+    color: #BEE04C;
+    border-radius: 0;
+  }
+
   header h1 {
     font-size: 1.3rem;
     bottom: 7px;
@@ -322,6 +337,7 @@ header .icon#heart {
     right: 11px;
     bottom: 7px;
     left: 2px;
+    z-index: 1;
   }
 
   header .icon#background {
@@ -521,7 +537,7 @@ header .icon#heart {
     background-color: rgba(241, 241, 241, 0.3);
     position: sticky;
     top: 0;
-    height: 300px;
+    height: 350px;
     flex: 1;
   }
 
@@ -624,10 +640,20 @@ header .icon#heart {
     height: 100%;
   }
 
+  #banner-section #banner-right .content {
+    width: 100vw;
+  }
+
   #banner-button {
+    font-family: Roboto, sans-serif;
     border-radius: 40px;
     border-radius: 7px;
-    font-size: 1rem;
+    font-size: 1.75rem;
+    font-weight: bolder;
+    padding: 0.5rem 0.5rem;
+    width: 100;
+    margin: 0 auto;
+    color: #BEE04C;
   }
 }
 
@@ -1402,4 +1428,19 @@ footer strong:hover {
   footer strong {
     letter-spacing: 0rem;
   }
+}
+
+/* Errors/Successes */
+
+#error_explanation p,
+#bulletin-section #bulletin-left #post-0.post #success_update p {
+  color: #ab0345;
+  height: 5rem;
+  width: 100%;
+  background-color: darkslategray;
+  padding: 1rem;
+  text_align: center;
+  font-family: Roboto, sans-serif;
+  text-shadow: -1px 0 #BEE04C, 0 1px #BEE04C, 1px 0 #BEE04C, 0 -1px #BEE04C;
+  font-size: 2rem;
 }

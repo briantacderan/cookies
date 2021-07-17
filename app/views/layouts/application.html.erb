@@ -45,12 +45,8 @@
         <nav class="mobile">
           <ul>
             <li>
-              <p class="notice"><%= notice %></p>
-              <p class="alert"><%= alert %></p>
-            </li>
-            <li>
               <%- if current_user %>
-              <%= link_to destroy_user_session_path do %>
+              <%= link_to destroy_session_path(current_user), method: :delete, class: "logout" do %>
                 <%= image_tag "logout.svg", id: "logout", class: "icon logout" %>
               <% end %>
               <% end %>
@@ -81,6 +77,10 @@
     <%= yield %>
 
     <div id="spacing" class="container">
+      <li>
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+      </li>
     </div>
 
     <footer>
