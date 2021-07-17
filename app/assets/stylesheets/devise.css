@@ -1,0 +1,81 @@
+/* Login Section */
+
+div.devise-page {
+  height: 100vh;
+  width: 100%;
+  background-color: darkslategray;
+  color: gray;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border-bottom: 25vw solid #BEE04C;
+}
+
+div.devise-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10rem 0;
+}
+
+div.devise-content {
+  width: 100%;
+  height: 100%;
+}
+
+div.devise-page-title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.devise-page-title h1 {
+  color: #BEE04C;
+}
+
+div.devise-page-title h1,
+div.devise-page-title h2 {
+  margin: 0.25rem auto;
+}
+
+div.devise-page-title h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+div.devise-page a {
+  color: white;
+  margin: 1rem auto;
+}
+
+div.devise-page a:hover {
+  color: #ab0345;
+}
+
+div.devise-page form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+div.devise-page em {
+  color: #BEE04C;
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+div.devise-page form input {
+  margin: 0.5rem 0;
+}
+
+div.devise-page form .actions input {
+  margin: 1.25rem 0;
+}
+
+footer {
+  position: fixed;
+}

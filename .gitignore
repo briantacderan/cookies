@@ -65,13 +65,10 @@ yarn-debug.log*
 /storage/*
 !/storage/.keep
 
+# SSL certificate for puma
+# /config/certs/*
+# !/config/certs/.keep
+
 # Checkpoints
 .ipynb_checkpoints
 .DS_Store
-
-/public/packs
-/public/packs-test
-/node_modules
-/yarn-error.log
-yarn-debug.log*
-.yarn-integrity
