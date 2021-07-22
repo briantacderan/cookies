@@ -16,12 +16,11 @@ class Stripe::CheckoutsController < ApplicationController
       customer = Stripe::Customer.retrieve(current_user.stripe_id)
     else
       customer = StripeTool.create_customer(
-        email: current_user.email, 
-        stripe_token: params[:stripeToken]
+        email: current_user.email
       )
-      current_user.update!(stripe_id: customer.id)
     end
     
+    current_user.update!(stripe_id: customer.id)
     stripe_session = Stripe::Checkout::Session.create({
       payment_method_types: ['card'],
       line_items: session[:line_items],
@@ -31,7 +30,7 @@ class Stripe::CheckoutsController < ApplicationController
       success_url: "#{stripe_thanks_url}?session_id={CHECKOUT_SESSION_ID}",
       cancel_url: root_url
     })
-
+      
     redirect_to stripe_session.url
   rescue Stripe::InvalidRequestError => e
     flash[:error] = 'You silly goose! Your cart is empty!'

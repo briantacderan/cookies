@@ -1,8 +1,7 @@
 module StripeTool
-  def self.create_customer(email: :email, stripe_token: :stripe_token)
+  def self.create_customer(email: :email)
     Stripe::Customer.create(
-      email: email,
-      source: stripe_token
+      email: email
     )
   end
 
