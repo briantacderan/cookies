@@ -1454,6 +1454,7 @@ footer strong:hover {
   footer strong {
     letter-spacing: 0rem;
   }
+}
 
 @media only screen and (max-height: 400px) and (max-width: 440px) {
   #bulletin-section {
