@@ -215,7 +215,6 @@ header .icon#heart {
     height: 1rem;
   }
 
-<<<<<<< HEAD
   header .icon#logout {
     height: 2rem;
     padding-bottom: 0.6rem;
@@ -223,8 +222,6 @@ header .icon#heart {
     margin-right: 0.5rem;
   }
 
-=======
->>>>>>> Revert "Finalize most functionality before CSS detailing again"
   header nav.desktop {
     display: none;
   }
@@ -782,7 +779,7 @@ header .icon#heart {
   height: 5rem;
   width: 100%;
   padding: 1rem;
-  text_align: center;
+  text-align: center;
   font-size: 2rem;
   font-family: Roboto, sans-serif;
   text-shadow: -1px 0 #BEE04C, 0 1px #BEE04C,
@@ -1457,12 +1454,9 @@ footer strong:hover {
   footer strong {
     letter-spacing: 0rem;
   }
-<<<<<<< HEAD
 
 @media only screen and (max-height: 400px) and (max-width: 440px) {
   #bulletin-section {
     display: none;
   }
-=======
->>>>>>> Revert "Finalize most functionality before CSS detailing again"
 }
