@@ -5,7 +5,7 @@
 
     <article>
       <%- if flash[:error].present? %>
-      <div id="error_explanation">
+      <div id="error-explanation">
         <p><%= flash[:error] %></p>
       </div>
       <% end %>
@@ -13,6 +13,7 @@
 
     <div id="cart-view-content" class="checkouts-content">
       <div id="cart-view">
+
         <div id="cart-details">
           <label class="amount">
             <div id="cart-view-title" class="checkouts-page-title">
@@ -29,6 +30,7 @@
           <%= link_to "Checkout", stripe_finalize_path %>
           <%= link_to "Delete all items", stripe_restart_path %>
         </form>
+          
       </div>
     </div>
 
