@@ -193,10 +193,6 @@ header .icon#background {
   z-index: 3;
 }
 
-header .icon#name {
-  z-index: 3;
-}
-
 header .icon#heart {
   filter: invert(30%) sepia(49%) saturate(1812%) hue-rotate(314deg) brightness(86%) contrast(92%);
 }
@@ -219,6 +215,7 @@ header .icon#heart {
     height: 1rem;
   }
 
+<<<<<<< HEAD
   header .icon#logout {
     height: 2rem;
     padding-bottom: 0.6rem;
@@ -226,6 +223,8 @@ header .icon#heart {
     margin-right: 0.5rem;
   }
 
+=======
+>>>>>>> Revert "Finalize most functionality before CSS detailing again"
   header nav.desktop {
     display: none;
   }
@@ -335,12 +334,6 @@ header .icon#heart {
     display: flex;
   }
 
-  header nav.mobile li a:hover {
-    background-color: clear;
-    color: #BEE04C;
-    border-radius: 0;
-  }
-
   header h1 {
     font-size: 1.3rem;
     bottom: 7px;
@@ -352,7 +345,6 @@ header .icon#heart {
     right: 11px;
     bottom: 7px;
     left: 2px;
-    z-index: 1;
   }
 
   header .icon#background {
@@ -553,7 +545,7 @@ header .icon#heart {
     background-color: rgba(241, 241, 241, 0.3);
     position: sticky;
     top: 0;
-    height: 350px;
+    height: 300px;
     flex: 1;
     z-index: 4;
   }
@@ -657,20 +649,10 @@ header .icon#heart {
     height: 100%;
   }
 
-  #banner-section #banner-right .content {
-    width: 100vw;
-  }
-
   #banner-button {
-    font-family: Roboto, sans-serif;
     border-radius: 40px;
     border-radius: 7px;
-    font-size: 1.75rem;
-    font-weight: bolder;
-    padding: 0.5rem 0.5rem;
-    width: 100;
-    margin: 0 auto;
-    color: #BEE04C;
+    font-size: 1rem;
   }
 }
 
@@ -1475,9 +1457,12 @@ footer strong:hover {
   footer strong {
     letter-spacing: 0rem;
   }
+<<<<<<< HEAD
 
 @media only screen and (max-height: 400px) and (max-width: 440px) {
   #bulletin-section {
     display: none;
   }
+=======
+>>>>>>> Revert "Finalize most functionality before CSS detailing again"
 }

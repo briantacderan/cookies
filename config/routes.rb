@@ -9,9 +9,9 @@ Rails.application.routes.draw do
     post 'webhook' => 'checkouts#webhook'
     post 'add' => 'checkouts#new'
     get 'cart' => 'checkouts#show'
-    get 'finalize' => 'checkouts#create'
+    get 'finalize', to: 'checkouts#create'
     get 'thanks' => 'checkouts#thanks'
-    get 'restart' => 'checkouts#destroy'
+    delete 'restart' => 'checkouts#destroy'
   end
   resources :subscriptions
 end
