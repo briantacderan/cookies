@@ -50,6 +50,11 @@ h1.cat-name {
 #seasonal h1 {
   color: white;
   right: 10vw;
+  -webkit-transition: -webkit-transform 4s;
+}
+
+#seasonal h1.hide {
+  -webkit-transform:translateY(10000px);
 }
 
 img.original {
@@ -61,6 +66,11 @@ img.original {
 img.seasonal {
   width: 100vw;
   border-radius: 15% 15% 0 0;
+  -webkit-transition: -webkit-transform 4s;
+}
+
+img.seasonal.hide {
+  -webkit-transform:translateY(10000px);
 }
 
 h1.cat-name {

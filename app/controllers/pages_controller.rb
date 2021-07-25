@@ -6,6 +6,8 @@ class PagesController < ApplicationController
   end
     
   def menu
+    @og = Chip.find_by_id(id=1)
+    @new = Chip.find_by_id(id=2)
   end
 
   def about
