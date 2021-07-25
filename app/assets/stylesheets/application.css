@@ -162,7 +162,7 @@ header a:hover {
 }
 
 header nav li a:hover {
-  background-color: rgba(190, 224, 76, 0.75);
+  background-color: #BFE04C;
   color: black;
   border-radius: 200px;
 }
@@ -198,6 +198,10 @@ header .icon#heart {
 }
 
 @media only screen and (max-width: 730px) {
+  header {
+    height: 3rem;
+  }
+
   header .content {
     height: inherit;
   }
@@ -216,7 +220,7 @@ header .icon#heart {
   }
 
   header .icon#logout {
-    height: 2rem;
+    height: 1.9rem;
     padding-bottom: 0.6rem;
     filter: invert(99%) sepia(83%) saturate(90%) hue-rotate(192deg) brightness(110%) contrast(89%);
     margin-right: 0.5rem;
@@ -237,6 +241,27 @@ header .icon#heart {
 
   header .icon#heart {
     height: 20px;
+  }
+
+  header h1 {
+    font-size: 1.3rem;
+    bottom: 7px;
+    left: 40px;
+  }
+
+  header .icon#name {
+    height: 100px;
+    right: 11px;
+    bottom: 7px;
+    left: 2px;
+  }
+
+  header .icon#background {
+    height: 50px;
+    position: relative;
+    top: 10px;
+    left: 7px;
+    visibility: hidden;
   }
 
   .dropdown {
@@ -309,10 +334,13 @@ header .icon#heart {
   }
 
   header {
-    height: 3rem;
     border-bottom: none;
     background: none;
     box-shadow: none;
+  }
+
+  header h1 {
+    color: darkslategray;
   }
 
   header ul {
@@ -331,25 +359,8 @@ header .icon#heart {
     display: flex;
   }
 
-  header h1 {
-    font-size: 1.3rem;
-    bottom: 7px;
-    left: 40px;
-  }
-
-  header .icon#name {
-    height: 100px;
-    right: 11px;
-    bottom: 7px;
-    left: 2px;
-  }
-
-  header .icon#background {
-    height: 50px;
-    position: relative;
-    top: 10px;
-    left: 7px;
-    visibility: hidden;
+  header .icon#logout {
+    filter: none;
   }
 
   .dropdown-content {
@@ -434,10 +445,10 @@ header .icon#heart {
 }
 
 #banner-button,
-.devise-page .actions input {
+.actions.button input {
   background-color: white;
   color: darkslategray;
-  opacity: 80%;
+  opacity: 70%;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.2rem;
@@ -462,7 +473,7 @@ header .icon#heart {
 }
 
 #banner-button:hover,
-.devise-page .actions input:hover {
+.actions.button input:hover {
   background-color: #BEE04C;
   color: white;
   cursor: pointer;
@@ -510,9 +521,9 @@ header .icon#heart {
     width: 100%;
     color: rgba(270, 270, 270, 0.95);
     opacity: 0.4;
-    text-shadow: -1px 1px 1px rgba(0,0,0,0.51),
-                -2px 2px 2px rgba(0,0,0,0.51),
-                -4px 4px 4px rgba(0,0,0,0.51);
+    text-shadow: -1px 1px 1px rgba(0,0,0,0.81),
+                -2px 2px 2px rgba(0,0,0,0.81),
+                -4px 4px 4px rgba(0,0,0,0.81);
   }
 
   #banner-section .content p {
@@ -546,7 +557,7 @@ header .icon#heart {
     justify-content: flex-start;
     align-items: flex-start;
     border-top: 2rem solid white;
-    border-bottom: 3px solid rgba(127, 148, 58, 1);
+    border-bottom: 3px solid rgba(230, 230, 230, 0.65);
     box-shadow: 0 1px 1px rgba(0,0,0,0.11),
                 0 2px 2px rgba(0,0,0,0.11),
                 0 4px 4px rgba(0,0,0,0.11),
@@ -586,7 +597,7 @@ header .icon#heart {
   }
 
   #banner-section .content h1 {
-    color: rgba(270, 270, 270, 0.85);
+    color: rgba(230, 230, 230, 0.65);
   }
 
   #banner-section .content h3 {
@@ -684,7 +695,7 @@ header .icon#heart {
 
   #banner-button {
     font-size: 1rem;
-    color: #BEE04C;
+    color: #F1F1F1;
     background-color: darkslategray;
     font-weight: bold;
     margin: 0 auto;
@@ -1116,6 +1127,11 @@ header .icon#heart {
     border-radius: 0 75px 75px 0;
     margin-right: 12vw;
     overflow-y: hidden;
+    box-shadow: 0 0 1px -1px rgba(0,0,0,0.11),
+                0 0 2px -2px rgba(0,0,0,0.11),
+                0 0 4px -4px rgba(0,0,0,0.11),
+                0 0 8px -8px rgba(0,0,0,0.11),
+                0 0 12px -12px rgba(0,0,0,0.11);
   }
 
   #bulletin-right .parallax {
@@ -1229,7 +1245,7 @@ header .icon#heart {
 
 /* Newsletter Section */
 #newsletter-section {
-  background-color: #f1f1f1;
+  background-color: white;
   border-top: 50px solid #BEE04C;
 }
 
@@ -1361,6 +1377,12 @@ header .icon#heart {
   #newsletter-section input.form-control {
     width: 190px;
     height: 30px;
+    border-radius: 6px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11),
+                0 2px 2px rgba(0,0,0,0.11),
+                0 4px 4px rgba(0,0,0,0.11),
+                0 6px 8px rgba(0,0,0,0.11),
+                0 8px 16px rgba(0,0,0,0.11);
   }
 
   #newsletter-section button {
@@ -1377,13 +1399,14 @@ header .icon#heart {
 
   #newsletter-section .container {
     padding: 1.5rem 0 5rem 0;
+    background-color: rgba(230, 230, 230, 1);
     border-left: 6px solid darkslategray;
     border-right: 6px solid darkslategray;
   }
 
   #newsletter-section h1 {
     font-family: 'Phosphate', sans-serif;
-    color: olive;
+    color: gray;
   }
 }
 
@@ -1396,7 +1419,7 @@ footer {
   bottom: 0;
   position: relative;
   width: 100vw;
-  border-top: solid 3px darkslategray;
+  border-top: solid 6px #BFE04C;
   box-shadow: 0 1px 1px rgba(0,0,0,0.11),
               0 2px 2px rgba(0,0,0,0.11),
               0 4px 4px rgba(0,0,0,0.11),
