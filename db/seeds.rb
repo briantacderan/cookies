@@ -8,7 +8,6 @@ c5 = Chip.create(name: 'Black Sesame', image: 'cookie_4.jpg', wide: 'cookie_4_wi
 c6 = Chip.create(name: 'White Chocolate Macadamia', image: 'cookie_4.jpg', wide: 'cookie_4_wide.jpg', description: 'Perfect nut to white chocolate ratio. Pinch yourself. You\'re not dreaming. It\'s just a cookie. Made with love and cookie care.', menu_id: og.id)
 
 
-
 fall = Menu.create(season: 'fall', info: 'Exclusive new flavors and limited seasonal cookies')
 
 c7 = Chip.create(name: 'Red Velvet', image: 'cookie_4.jpg', wide: 'cookie_4_wide.jpg', description: 'Actually, we\'d like to bake these cookies all-year round, but I consider this one a must during those days when the fog rolls in. I don\'t know why. A cookie is a cookie.', menu_id: fall.id)
