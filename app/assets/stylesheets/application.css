@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Phosphate';
-  src: url('fonts/Phosphate/Phosphate-Inline.ttf');
+  src: font-url('Phosphate-Inline.ttf');
   font-style: inline;
 }
 
 @font-face {
   font-family: 'Phosphate';
-  src: url('fonts/Phosphate/Phosphate-Solid.ttf');
+  src: font-url('Phosphate-Solid.ttf');
   font-style: solid;
 }
 
@@ -1489,8 +1489,34 @@ footer strong:hover {
   }
 }
 
-@media only screen and (max-height: 400px) and (max-width: 440px) {
+
+/* Landscape view */
+@media only screen and (max-height: 400px) {
+  #banner-section {
+    position: relative;
+    height: 100vh;
+  }
+
   #bulletin-section {
+    position: relative;
+    height: 90vh;
+  }
+
+  #bulletin-container,
+  #bulletin-left,
+  #bulletin-right {
+    height: 100%;
+  }
+
+  #newsletter-section {
+    height: 90vh;
+  }
+
+  #newsletter-section .container {
+    padding-bottom: 10vh;
+  }
+
+  footer {
     display: none;
   }
 }
